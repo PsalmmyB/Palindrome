@@ -1,0 +1,18 @@
+FUNCTION palindrome(text = STRING) : STRING
+VAR
+    text = STRING
+    i = INTEGER
+BEGIN
+    IF (text.length <= 1) THEN
+        write("true")
+    END_IF
+    FOR i FROM 0 TO text.length-1 STEP step  DO
+        IF (text[0] i= text.length-1) THEN
+            write("false")
+        ELSE
+            Return palindrome (text[1,-1])
+                set_instructions
+        END_IF
+    END_FOR
+    Return value;
+END
